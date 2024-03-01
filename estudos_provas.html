@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+
+            .acentoimprovisado {
+                width: 10px; /* largura */
+                height: 20px; /* altura */
+                background-color: #fc0146;
+                transform: rotate(45deg); /* faz ele virar 45 graus */
+                position: fixed; /* deixa ele sem interferir no layout, como se estivesse de fundo */
+                z-index: -1;
+                left: 856px;
+                top: 5px;
+                }
+        
+        @font-face{
+            font-family:'bump-it-up';
+            src: url('bump-it-up.ttf') format(truetype);
+
+
+        }
+    
+        body{
+            font-family: 'bump-it-up';
+            text-align: center;
+            font-size: 70px;
+            background-image: url(concept-art-from-rejected-batman-beyond-animated-movie-v0-naspii694sjc1_upscayl_1x_realesrgan-x4plus.png);
+            background-repeat: no-repeat;
+            background-color: black;
+            background-position: center top 0px;
+        }
+
+        a {
+            color: #fc0146;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: -1px;
+            left: -4px;
+            background-color: white;
+            transform-origin: top;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+            z-index: -1; /* Coloca a barra atr�s do link */
+        }
+
+        a:hover::before{
+            transform: scaleX(1);
+        }
+
+        .b{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .c{
+            margin-top: 50px;
+            display: flex;
+            justify-content: left;
+            font-size: 45px;
+            padding-left: 50px;
+            color: #fc0146;
+        }
+
+        .d{
+            margin-top: 50px;
+            display: flex;
+            justify-content: left;
+            font-size: 25px;
+            padding-left: 50px;
+            color: #fc0146;
+        }
+
+        .e{
+            margin-top: 50px;
+            display: flex;
+            justify-content: left;
+            font-size: 25px;
+            padding-left: 50px;
+            color: #fc0146;
+        }
+
+        .f{
+            margin-top: 50px;
+            display: flex;
+            justify-content: left;
+            font-size: 25px;
+            padding-left: 50px;
+            color: #fc0146;
+        }
+
+        .g{
+            margin-top: 50px;
+            display: flex;
+            justify-content: left;
+            font-size: 25px;
+            padding-left: 50px;
+            color: #fc0146;
+        }
+
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+    <div class="acentoimprovisado"></div>
+    <div class="b">  
+    <a href="index.html">HOME</a>&nbsp;&nbsp;
+    <a href="estudos_materias.html">MATERIAS</a>&nbsp;&nbsp;
+    <a href="estudos_datas.html">DATAS</a>
+    </div>
+    <div class="c">
+        Provas Anteriores:
+    </div>
+    <div class="d">
+    <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos">ENEM</a>
+    </div>
+    <div class="e">
+    <a href="https://www.comvest.unicamp.br/vestibulares-anteriores/">UNICAMP</a>
+    </div>
+    <div class="f">
+    <a href="https://acervo.fuvest.br/?t=vestibular">USP</a>
+    </div>
+
+</body>
+</html>
